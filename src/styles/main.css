@@ -24,5 +24,6 @@
 }
 
 body {
+  background-color: var(--background);
 	font-family: var(--ff-nunito-sans);
 }
