@@ -2,11 +2,13 @@
 
 :root {
 	--ff-nunito-sans: 'Nunito Sans', sans-serif;
-  --fs-home-page: 14px;
-  --fs-detail-page: 16px
+	--fs-home-page: 14px;
+	--fs-detail-page: 16px;
 
 	--container-max-width: initial;
 	--container-padding: 15px;
+
+	--header-height: 70px;
 }
 
 /* 
@@ -24,6 +26,6 @@
 }
 
 body {
-  background-color: var(--background);
+	background-color: var(--background);
 	font-family: var(--ff-nunito-sans);
 }
