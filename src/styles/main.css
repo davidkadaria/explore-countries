@@ -2,6 +2,9 @@
 
 :root {
 	--ff-nunito-sans: 'Nunito Sans', sans-serif;
+
+	--container-max-width: initial;
+	--container-padding: 15px;
 }
 
 /* 
