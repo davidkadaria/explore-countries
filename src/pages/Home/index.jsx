@@ -2,10 +2,20 @@ import { Fragment } from 'react';
 import { CountryCardsWrapper, CountryCard } from '../../components';
 
 function Home({ countries }) {
+	const testCountry = countries[0];
+	console.log(testCountry);
 	return (
 		<Fragment>
 			<CountryCardsWrapper>
-				<CountryCard />
+				{countries.map((country) => (
+					<CountryCard
+						flag={country.flags.svg}
+						name={country.name.common}
+						population={country.population}
+						region={country.region}
+						capital={country.capital?.join()}
+					/>
+				))}
 			</CountryCardsWrapper>
 		</Fragment>
 	);
