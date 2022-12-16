@@ -4,6 +4,7 @@ import {
 	CountryCard,
 	FilterWrapper,
 	Search,
+	Dropdown,
 } from '../../components';
 
 function Home({ countries }) {
@@ -11,7 +12,7 @@ function Home({ countries }) {
 		<Fragment>
 			<FilterWrapper>
 				<Search />
-				<div>DropDown</div>
+				<Dropdown />
 			</FilterWrapper>
 			<CountryCardsWrapper>
 				{countries.map((country) => (
