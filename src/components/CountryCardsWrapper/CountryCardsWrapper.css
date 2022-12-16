@@ -1,7 +1,25 @@
 .CountryCardsWrapper {
 	display: grid;
-	grid-template-columns: 1;
+	/* grid-template-columns: 1fr; */
 	justify-content: center;
 	gap: 40px;
 	padding-block: 40px;
+}
+
+@media (min-width: 768px) {
+	.CountryCardsWrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 992px) {
+	.CountryCardsWrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1400px) {
+	.CountryCardsWrapper {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }

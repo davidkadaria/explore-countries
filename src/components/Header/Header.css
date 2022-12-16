@@ -29,3 +29,13 @@
 	font-weight: 600;
 	font-size: 12px;
 }
+
+@media (min-width: 768px) {
+	.Header__heading {
+		font-size: 22px;
+	}
+
+	.Header__theme-switch {
+		font-size: 14px;
+	}
+}

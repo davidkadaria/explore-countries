@@ -34,3 +34,21 @@ a {
 	text-decoration: none;
 	-webkit-tap-highlight-color: transparent;
 }
+
+@media (min-width: 768px) {
+	:root {
+		--container-max-width: 630px;
+	}
+}
+
+@media (min-width: 992px) {
+	:root {
+		--container-max-width: 950px;
+	}
+}
+
+@media (min-width: 1400px) {
+	:root {
+		--container-max-width: 1270px;
+	}
+}
