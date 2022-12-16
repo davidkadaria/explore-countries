@@ -3,3 +3,4 @@ export * from './MainWrapper';
 export * from './CountryCardsWrapper';
 export * from './CountryCard';
 export * from './FilterWrapper';
+export * from './Search';
