@@ -8,15 +8,17 @@ function CountryCard({ flag, name, population, region, capital }) {
 			</div>
 			<div className="CountryCard__info">
 				<h2 className="CountryCard__name">{name}</h2>
-				<p className="CountryCard__prop">
+				<p className="CountryCard__property">
 					Population: <span>{population}</span>
 				</p>
-				<p className="CountryCard__prop">
+				<p className="CountryCard__property">
 					Region: <span>{region}</span>
 				</p>
-				<p className="CountryCard__prop">
-					Capital: <span>{capital}</span>
-				</p>
+				{capital ? (
+					<p className="CountryCard__property">
+						Capital: <span>{capital}</span>
+					</p>
+				) : null}
 			</div>
 		</div>
 	);
