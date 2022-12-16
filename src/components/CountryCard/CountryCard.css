@@ -40,3 +40,9 @@
 .CountryCard__property span {
 	font-weight: 300;
 }
+
+@media (max-width: 300px) {
+	.CountryCard {
+		width: 100%;
+	}
+}

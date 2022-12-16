@@ -10,7 +10,7 @@ function CountryCard({ flag, name, population, region, capital }) {
 			<div className="CountryCard__info">
 				<h2 className="CountryCard__name">{name}</h2>
 				<p className="CountryCard__property">
-					Population: <span>{population}</span>
+					Population: <span>{population.toLocaleString('en-US')}</span>
 				</p>
 				<p className="CountryCard__property">
 					Region: <span>{region}</span>
