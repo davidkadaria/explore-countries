@@ -17,7 +17,8 @@ function App() {
 	}, []);
 
 	const getCountryById = (id) => {
-		return countries.find((country) => country.id === id);
+		// return countries.find((country) => country.id === id);
+		return countries[0];
 	};
 
 	return (

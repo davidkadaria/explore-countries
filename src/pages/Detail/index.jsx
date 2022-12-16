@@ -1,5 +1,7 @@
 function Detail({ getCountryById }) {
-	return <h2>Detail</h2>;
+	const countryData = getCountryById(13);
+	// console.log(countryData);
+	return <h2>{countryData.name.official}</h2>;
 }
 
 export default Detail;
