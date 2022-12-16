@@ -2,8 +2,6 @@ import { Fragment } from 'react';
 import { CountryCardsWrapper, CountryCard } from '../../components';
 
 function Home({ countries }) {
-	const testCountry = countries[0];
-	console.log(testCountry);
 	return (
 		<Fragment>
 			<CountryCardsWrapper>

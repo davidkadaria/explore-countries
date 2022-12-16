@@ -1,7 +1,10 @@
-function Detail({ getCountryById }) {
-	const countryData = getCountryById(13);
-	// console.log(countryData);
-	return <h2>{countryData.name.official}</h2>;
+import { useParams } from 'react-router-dom';
+
+function Detail({ getCountryByRegionAndName }) {
+	const { region, name } = useParams();
+	const countryData = getCountryByRegionAndName(region, name);
+	console.log(countryData);
+	return <h2></h2>;
 }
 
 export default Detail;
