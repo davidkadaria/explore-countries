@@ -1,9 +1,13 @@
 import { Fragment } from 'react';
-import { CountryCardsWrapper, CountryCard } from '../../components';
+import { CountryCardsWrapper, CountryCard, FilterWrapper } from '../../components';
 
 function Home({ countries }) {
 	return (
 		<Fragment>
+			<FilterWrapper>
+				<div>Search</div>
+				<div>DropDown</div>
+			</FilterWrapper>
 			<CountryCardsWrapper>
 				{countries.map((country) => (
 					<CountryCard
