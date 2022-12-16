@@ -1,0 +1,55 @@
+.Dropdown {
+	position: relative;
+	width: 60%;
+	display: flex;
+	align-items: center;
+}
+
+.Dropdown__button {
+	width: 100%;
+	padding: 15px 20px;
+	background-color: var(--elements);
+	color: var(--text-color);
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	text-align: left;
+	font-family: var(--ff-nunito-sans);
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.ChevronDownIcon {
+	position: absolute;
+	right: 20px;
+	width: 12px;
+}
+
+.ChevronDownIcon path {
+	fill: var(--text-color);
+}
+
+.Dropdown__menu {
+	position: absolute;
+	top: calc(100% + 5px);
+	width: 100%;
+	line-height: 24px;
+	display: none;
+	padding: 15px;
+	background-color: var(--elements);
+	border-radius: 5px;
+}
+
+.Dropdown__menu--open {
+	display: block;
+}
+
+.Dropdown__item {
+	color: var(--input);
+	font-size: 14px;
+}
+
+.Dropdown__item--selected {
+	color: var(--text-color);
+	font-weight: 600;
+}
