@@ -1,6 +1,5 @@
 .CountryCardsWrapper {
 	display: grid;
-	/* grid-template-columns: 1fr; */
 	justify-content: center;
 	gap: 40px;
 	padding-block: 40px;
