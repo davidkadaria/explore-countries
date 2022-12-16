@@ -30,7 +30,7 @@ function App() {
 						<Routes>
 							<Route path="/" element={<Home countries={countries} />} />
 							<Route
-								path="/detail/:id"
+								path="/:region/:name"
 								element={<Detail getCountryById={getCountryById} />}
 							/>
 						</Routes>
