@@ -9,6 +9,7 @@ function Home({ countries }) {
 			<CountryCardsWrapper>
 				{countries.map((country) => (
 					<CountryCard
+						key={`${country.region}/${country.name.common}`}
 						flag={country.flags.svg}
 						name={country.name.common}
 						population={country.population}
