@@ -1,7 +1,6 @@
 .CountryCard {
 	width: 280px;
 	display: block;
-	/* margin-inline: auto; */
 	background-color: var(--elements);
 	border-radius: 5px;
 	overflow: hidden;
@@ -18,10 +17,26 @@
 }
 
 .CountryCard__info {
+	padding: 20px 20px 30px 20px;
+	color: var(--text-color);
+	font-family: var(--ff-nunito-sans);
 }
 
 .CountryCard__name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-bottom: 15px;
+	font-weight: 800;
+	font-size: 20px;
 }
 
 .CountryCard__property {
+	line-height: 24px;
+	font-weight: 600;
+	font-size: var(--fs-home-page);
+}
+
+.CountryCard__property span {
+	font-weight: 300;
 }
