@@ -1,0 +1,13 @@
+.FilterWrapper {
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+@media (min-width: 768px) {
+	.FilterWrapper {
+		flex-direction: row;
+	}
+}
