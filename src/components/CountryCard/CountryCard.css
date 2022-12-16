@@ -1,12 +1,10 @@
 .CountryCard {
-	overflow: hidden;
-
-	display: block;
 	width: 280px;
+	display: block;
 	/* margin-inline: auto; */
-	border-radius: 5px;
-
 	background-color: var(--elements);
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .CountryCard__flag {
