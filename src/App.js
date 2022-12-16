@@ -16,9 +16,12 @@ function App() {
 		});
 	}, []);
 
-	const getCountryById = (id) => {
-		// return countries.find((country) => country.id === id);
-		return countries[0];
+	const getCountryByRegionAndName = (region, name) => {
+		return countries.find(
+			(country) =>
+				country.region.toLowerCase() == region &&
+				country.name.common.toLowerCase() == name
+		);
 	};
 
 	return (
@@ -31,7 +34,7 @@ function App() {
 							<Route path="/" element={<Home countries={countries} />} />
 							<Route
 								path="/:region/:name"
-								element={<Detail getCountryById={getCountryById} />}
+								element={<Detail getCountryByRegionAndName={getCountryByRegionAndName} />}
 							/>
 						</Routes>
 					</Suspense>
