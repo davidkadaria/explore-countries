@@ -27,7 +27,6 @@ function Dropdown() {
 		setRegions((prevState) => {
 			const newState = prevState.map((region) => {
 				if (region.id === id) {
-					console.log(region.id);
 					return { ...region, selected: !region.selected };
 				}
 				return { ...region };
