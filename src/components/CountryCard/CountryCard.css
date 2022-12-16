@@ -1,0 +1,29 @@
+.CountryCard {
+	overflow: hidden;
+
+	display: block;
+	width: 280px;
+	/* margin-inline: auto; */
+	border-radius: 5px;
+
+	background-color: var(--elements);
+}
+
+.CountryCard__flag {
+	height: 150px;
+}
+
+.CountryCard__flag img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.CountryCard__info {
+}
+
+.CountryCard__name {
+}
+
+.CountryCard__prop {
+}
