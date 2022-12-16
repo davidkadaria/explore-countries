@@ -1,11 +1,16 @@
 import { Fragment } from 'react';
-import { CountryCardsWrapper, CountryCard, FilterWrapper } from '../../components';
+import {
+	CountryCardsWrapper,
+	CountryCard,
+	FilterWrapper,
+	Search,
+} from '../../components';
 
 function Home({ countries }) {
 	return (
 		<Fragment>
 			<FilterWrapper>
-				<div>Search</div>
+				<Search />
 				<div>DropDown</div>
 			</FilterWrapper>
 			<CountryCardsWrapper>
