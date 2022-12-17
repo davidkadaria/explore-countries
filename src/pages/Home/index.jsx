@@ -6,6 +6,7 @@ import {
 	FilterWrapper,
 	Search,
 	Dropdown,
+	ResultsNotFound,
 } from '../../components';
 
 function Home({ countries }) {
@@ -33,37 +34,35 @@ function Home({ countries }) {
 		}
 	};
 
+	const countriesToRender = filter(countries);
+
 	return (
 		<Fragment>
 			<FilterWrapper>
 				<Search setValue={setSearchValue} />
 				<Dropdown currentRegion={region} setRegion={setRegion} />
 			</FilterWrapper>
-			<CountryCardsWrapper>
-				{countries ? (
-					countries.length === 0 ? (
-						<div>404</div>
-					) : (
-						filter(countries).map((country) => (
-							<RenderIfVisible
-								key={`${country.region}/${country.name.common}`}
-								defaultHeight={325}
-								stayRendered
-							>
-								<CountryCard
-									flag={country.flags.svg}
-									name={country.name.common}
-									population={country.population}
-									region={country.region}
-									capital={country.capital?.join(', ')}
-								/>
-							</RenderIfVisible>
-						))
-					)
-				) : (
-					<div>loading...</div>
-				)}
-			</CountryCardsWrapper>
+			{countriesToRender.length === 0 ? (
+				<ResultsNotFound />
+			) : (
+				<CountryCardsWrapper>
+					{countriesToRender.map((country) => (
+						<RenderIfVisible
+							key={`${country.region}/${country.name.common}`}
+							defaultHeight={325}
+							stayRendered
+						>
+							<CountryCard
+								flag={country.flags.svg}
+								name={country.name.common}
+								population={country.population}
+								region={country.region}
+								capital={country.capital?.join(', ')}
+							/>
+						</RenderIfVisible>
+					))}
+				</CountryCardsWrapper>
+			)}
 		</Fragment>
 	);
 }
