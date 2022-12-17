@@ -12,12 +12,12 @@ function Dropdown({ currentRegion, setRegion }) {
 	};
 
 	const toggleSelect = (region) => {
+		setIsOpen(false);
 		if (region === currentRegion) {
 			setRegion('');
 		} else {
 			setRegion(region);
 		}
-		setIsOpen(false);
 	};
 
 	return (
