@@ -8,7 +8,7 @@
 }
 
 .CountryInfo__value {
-	display: inline-block;
+	display: inline;
 	text-transform: none;
 	font-weight: 300;
 }
