@@ -50,7 +50,7 @@ function Home({ countries }) {
 								name={country.name.common}
 								population={country.population}
 								region={country.region}
-								capital={country.capital?.join()}
+								capital={country.capital?.join(', ')}
 							/>
 						))
 					)
