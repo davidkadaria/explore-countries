@@ -7,3 +7,4 @@ export * from './Search';
 export * from './Dropdown';
 export * from './Button';
 export * from './CountryInfo';
+export * from './ResultsNotFound';
