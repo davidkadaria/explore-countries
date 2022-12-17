@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Button } from '../../components';
 import { ArrowLeftIcon } from '../../icons';
+import './Detail.css';
 
 function Detail({ getCountryByRegionAndName }) {
 	const navigate = useNavigate();
