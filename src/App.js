@@ -7,13 +7,29 @@ import { Header, MainWrapper } from './components';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 
+const fields = [
+	'name',
+	'flags',
+	'population',
+	'region',
+	'subregion',
+	'capital',
+	'tld',
+	'currencies',
+	'languages',
+	'borders',
+	'fifa',
+];
+
 function App() {
 	const [countries, setCountries] = useState();
 
 	useEffect(() => {
-		axios.get('https://restcountries.com/v3.1/all').then((res) => {
-			setCountries(res.data);
-		});
+		axios
+			.get(`https://restcountries.com/v3.1/all?fields=${fields.join(',')}`)
+			.then((res) => {
+				setCountries(res.data);
+			});
 	}, []);
 
 	const getCountryByRegionAndName = (region, name) => {
