@@ -41,5 +41,24 @@
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
+
+		<script>
+			// Current theme
+			let currentTheme = localStorage.getItem('theme');
+			// Constants
+			const defaultThemeValue = 'light';
+
+			function setTheme(theme) {
+				localStorage.setItem('theme', theme);
+			}
+
+			// Check if theme value is set
+			if (!currentTheme || (currentTheme !== 'dark' && currentTheme !== 'light')) {
+				setTheme(defaultThemeValue);
+				currentTheme = defaultThemeValue;
+			}
+
+			document.documentElement.classList.add(currentTheme);
+		</script>
 	</body>
 </html>
