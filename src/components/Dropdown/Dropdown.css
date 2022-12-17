@@ -3,7 +3,6 @@
 	width: 60%;
 	display: flex;
 	align-items: center;
-	box-shadow: 0px 0px 5px var(--shadow);
 }
 
 .Dropdown__button {
@@ -14,6 +13,7 @@
 	border: 0;
 	outline: 0;
 	border-radius: 5px;
+	box-shadow: 0px 0px 5px var(--shadow);
 	text-align: left;
 	font-family: var(--ff-nunito-sans);
 	font-weight: 600;
