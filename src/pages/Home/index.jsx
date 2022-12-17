@@ -1,5 +1,6 @@
 import { useState, Fragment } from 'react';
 import RenderIfVisible from 'react-render-if-visible';
+import { Helmet } from 'react-helmet';
 import {
 	CountryCardsWrapper,
 	CountryCard,
@@ -38,6 +39,9 @@ function Home({ countries }) {
 
 	return (
 		<Fragment>
+			<Helmet>
+				<title>Explore the Countries</title>
+			</Helmet>
 			<FilterWrapper>
 				<Search setValue={setSearchValue} />
 				<Dropdown currentRegion={region} setRegion={setRegion} />

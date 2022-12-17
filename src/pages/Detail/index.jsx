@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { useNavigate, useParams, Navigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { Button, CountryInfo } from '../../components';
 import { ArrowLeftIcon } from '../../icons';
 import './Detail.css';
@@ -17,6 +18,17 @@ function Detail({ getCountryByRegionAndName, getBorderCountriesByCountryCodes })
 
 	return (
 		<Fragment>
+			<Helmet>
+				<title>
+					{countryData.name.common} / {countryData.region}
+				</title>
+				<meta property="og:title" content={countryData.name.common} />
+				<meta
+					property="og:description"
+					content={`Basic information about ${countryData.name.common}`}
+				/>
+				<meta property="og:image" content={countryData.flags.png} />
+			</Helmet>
 			<Button
 				textContent="Back"
 				icon={<ArrowLeftIcon />}
