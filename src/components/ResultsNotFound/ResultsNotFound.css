@@ -1,3 +1,14 @@
 .ResultsNotFound {
+	padding-top: 40px;
+	color: var(--text-color);
 	text-align: center;
+	font-family: var(--ff-nunito-sans);
+	font-weight: 600;
+	font-size: var(--fs-home-page);
+}
+
+@media (min-width: 768px) {
+	.ResultsNotFound {
+		font-size: 30px;
+	}
 }
