@@ -17,11 +17,12 @@ function App() {
 	}, []);
 
 	const getCountryByRegionAndName = (region, name) => {
-		return countries.find(
-			(country) =>
-				country.region.toLowerCase() == region &&
-				country.name.common.toLowerCase() == name
-		);
+		return countries.find((country) => {
+			return (
+				country.region.toLowerCase() === region &&
+				country.name.common.toLowerCase() === name
+			);
+		});
 	};
 
 	return (
@@ -39,7 +40,7 @@ function App() {
 						</Routes>
 					</Suspense>
 				) : (
-					<div>Still loading...</div>
+					<p>LoAdInG...</p>
 				)}
 			</MainWrapper>
 		</Fragment>
