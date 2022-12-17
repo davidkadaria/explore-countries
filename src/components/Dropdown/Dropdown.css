@@ -47,9 +47,32 @@
 .Dropdown__item {
 	color: var(--input);
 	font-size: 14px;
+	cursor: pointer;
+}
+
+.Dropdown__item:hover {
+	color: var(--text-color);
 }
 
 .Dropdown__item--selected {
 	color: var(--text-color);
 	font-weight: 600;
+}
+
+@media (min-width: 768px) {
+	.Dropdown {
+		width: 30%;
+	}
+}
+
+@media (min-width: 992px) {
+	.Dropdown {
+		width: 20%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.Dropdown {
+		width: 20%;
+	}
 }
