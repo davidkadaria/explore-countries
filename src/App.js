@@ -1,11 +1,11 @@
 import axios from 'axios';
-import { useState, useEffect, Fragment, Suspense, lazy } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import { Header, MainWrapper } from './components';
 
-const Home = lazy(() => import('./pages/Home'));
-const Detail = lazy(() => import('./pages/Detail'));
+import Home from './pages/Home';
+import Detail from './pages/Detail';
 
 function App() {
 	const [countries, setCountries] = useState();
@@ -30,15 +30,13 @@ function App() {
 			<Header />
 			<MainWrapper>
 				{countries ? (
-					<Suspense fallback={<div>Loading...</div>}>
-						<Routes>
-							<Route path="/" element={<Home countries={countries} />} />
-							<Route
-								path="/:region/:name"
-								element={<Detail getCountryByRegionAndName={getCountryByRegionAndName} />}
-							/>
-						</Routes>
-					</Suspense>
+					<Routes>
+						<Route path="/" element={<Home countries={countries} />} />
+						<Route
+							path="/:region/:name"
+							element={<Detail getCountryByRegionAndName={getCountryByRegionAndName} />}
+						/>
+					</Routes>
 				) : (
 					<p>LoAdInG...</p>
 				)}
