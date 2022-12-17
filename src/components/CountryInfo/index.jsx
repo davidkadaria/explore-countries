@@ -1,7 +1,11 @@
 import './CountryInfo.css';
 
-function CountryInfo() {
-	return <div>info</div>;
+function CountryInfo({ prefix, value }) {
+	return (
+		<p className="CountryInfo">
+			{prefix}: <span className="CountryInfo__value">{value}</span>
+		</p>
+	);
 }
 
 export { CountryInfo };

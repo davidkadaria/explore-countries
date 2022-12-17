@@ -1,0 +1,9 @@
+.CountryInfo {
+	line-height: 24px;
+	font-weight: 600;
+	font-size: var(--fs-home-page);
+}
+
+.CountryInfo__value {
+	display: inline-block;
+}
