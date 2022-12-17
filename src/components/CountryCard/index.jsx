@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { CountryInfo } from '../';
 import './CountryCard.css';
 
 function CountryCard({ flag, name, population, region, capital }) {
@@ -9,17 +10,9 @@ function CountryCard({ flag, name, population, region, capital }) {
 			</div>
 			<div className="CountryCard__info">
 				<h2 className="CountryCard__name">{name}</h2>
-				<p className="CountryCard__property">
-					Population: <span>{population.toLocaleString('en-US')}</span>
-				</p>
-				<p className="CountryCard__property">
-					Region: <span>{region}</span>
-				</p>
-				{capital ? (
-					<p className="CountryCard__property">
-						Capital: <span>{capital}</span>
-					</p>
-				) : null}
+				<CountryInfo prefix="Population" value={population.toLocaleString('en-US')} />
+				<CountryInfo prefix="Region" value={region} />
+				{capital ? <CountryInfo prefix="Capital" value={capital} /> : null}
 			</div>
 		</Link>
 	);
