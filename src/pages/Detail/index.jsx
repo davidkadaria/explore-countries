@@ -17,6 +17,14 @@ function Detail({ getCountryByRegionAndName }) {
 				icon={<ArrowLeftIcon />}
 				clickHandler={() => navigate('/')}
 			/>
+			<div className="Detail">
+				<img className="Detail__flag" src={countryData.flags.svg} alt="" />
+				<h1 className="Detail__name">{countryData.name.common}</h1>
+				<div className="Detail__info">
+					<div className="Detail__info-basic"></div>
+					<div className="Detail__info-additional"></div>
+				</div>
+			</div>
 		</Fragment>
 	);
 }

@@ -1,0 +1,16 @@
+.Detail {
+	display: grid;
+	padding-top: 40px;
+}
+
+.Detail__flag {
+	width: 100%;
+}
+
+.Detail__name {
+	padding-top: 40px;
+	color: var(--text-color);
+	font-family: var(--ff-nunito-sans);
+	font-weight: 800;
+	font-size: 32px;
+}
