@@ -12,7 +12,7 @@ function CountryCard({ flag, name, population, region, capital }) {
 				<h2 className="CountryCard__name">{name}</h2>
 				<CountryInfo prefix="Population" value={population.toLocaleString('en-US')} />
 				<CountryInfo prefix="Region" value={region} />
-				{capital ? <CountryInfo prefix="Capital" value={capital} /> : null}
+				<CountryInfo prefix="Capital" value={capital} />
 			</div>
 		</Link>
 	);
