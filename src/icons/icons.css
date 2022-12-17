@@ -1,0 +1,21 @@
+.SearchIcon {
+	position: absolute;
+	left: 30px;
+	height: 30%;
+}
+
+.ChevronDownIcon {
+	position: absolute;
+	right: 20px;
+	width: 12px;
+}
+
+.ArrowLeftIcon {
+	height: 14px;
+}
+
+.SearchIcon path,
+.ChevronDownIcon path,
+.ArrowLeftIcon path {
+	fill: var(--text-color);
+}
