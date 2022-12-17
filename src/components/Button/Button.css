@@ -1,0 +1,19 @@
+.Button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px 30px;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	background-color: var(--elements);
+	color: var(--text-color);
+	box-shadow: 0px 0px 5px 0 var(--shadow);
+	font-family: var(--ff-nunito-sans);
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.Button:hover {
+	box-shadow: 0px 0px 20px var(--shadow);
+}
