@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useEffect, Fragment } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header, MainWrapper } from './components';
+import { Header, MainWrapper, Loading } from './components';
 
 import Home from './pages/Home';
 import Detail from './pages/Detail';
@@ -66,7 +66,7 @@ function App() {
 						/>
 					</Routes>
 				) : (
-					<p>LoAdInG...</p>
+					<Loading />
 				)}
 			</MainWrapper>
 		</Fragment>
