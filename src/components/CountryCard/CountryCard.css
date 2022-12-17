@@ -1,5 +1,6 @@
 .CountryCard {
 	width: 280px;
+	height: 325px;
 	display: block;
 	background-color: var(--elements);
 	border-radius: 5px;

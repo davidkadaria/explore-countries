@@ -1,4 +1,5 @@
 import { useState, Fragment } from 'react';
+import RenderIfVisible from 'react-render-if-visible';
 import {
 	CountryCardsWrapper,
 	CountryCard,
@@ -44,14 +45,19 @@ function Home({ countries }) {
 						<div>404</div>
 					) : (
 						filter(countries).map((country) => (
-							<CountryCard
+							<RenderIfVisible
 								key={`${country.region}/${country.name.common}`}
-								flag={country.flags.svg}
-								name={country.name.common}
-								population={country.population}
-								region={country.region}
-								capital={country.capital?.join(', ')}
-							/>
+								defaultHeight={325}
+								stayRendered
+							>
+								<CountryCard
+									flag={country.flags.svg}
+									name={country.name.common}
+									population={country.population}
+									region={country.region}
+									capital={country.capital?.join(', ')}
+								/>
+							</RenderIfVisible>
 						))
 					)
 				) : (
