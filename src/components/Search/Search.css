@@ -6,16 +6,6 @@
 	box-shadow: 0px 0px 5px var(--shadow);
 }
 
-.SearchIcon {
-	position: absolute;
-	left: 30px;
-	height: 30%;
-}
-
-.SearchIcon path {
-	fill: var(--text-color);
-}
-
 .Search__input {
 	width: 100%;
 	padding: 15px 15px 15px 60px;
