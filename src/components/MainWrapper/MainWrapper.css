@@ -1,6 +1,7 @@
 .MainWrapper {
 	max-width: var(--container-max-width);
 	padding-inline: var(--container-padding);
+	padding-top: 40px;
 	margin-inline: auto;
 	margin-top: var(--header-height);
 }
