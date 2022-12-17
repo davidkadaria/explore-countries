@@ -8,3 +8,4 @@ export * from './Dropdown';
 export * from './Button';
 export * from './CountryInfo';
 export * from './ResultsNotFound';
+export * from './Loading';
