@@ -1,14 +1,19 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import { useNavigate, useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { Button, CountryInfo } from '../../components';
 import { ArrowLeftIcon } from '../../icons';
+import { scrollToTop } from '../../helpers';
 import './Detail.css';
 
 function Detail({ getCountryByRegionAndName, getBorderCountriesByCountryCodes }) {
 	const { region, name } = useParams();
 	const navigate = useNavigate();
 	const countryData = getCountryByRegionAndName(region, name);
+
+	useEffect(() => {
+		scrollToTop();
+	}, [name]);
 
 	if (!countryData) {
 		return <Navigate to="/" />;
