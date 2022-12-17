@@ -20,16 +20,6 @@
 	font-size: 14px;
 }
 
-.ChevronDownIcon {
-	position: absolute;
-	right: 20px;
-	width: 12px;
-}
-
-.ChevronDownIcon path {
-	fill: var(--text-color);
-}
-
 .Dropdown__menu {
 	position: absolute;
 	top: calc(100% + 5px);
