@@ -5,9 +5,7 @@ function Header() {
 	return (
 		<header className="Header">
 			<div className="Header__container">
-				<Link to="/">
-					<h1 className="Header__heading">Where in the world?</h1>
-				</Link>
+				<h1 className="Header__heading">Where in the world?</h1>
 				<div className="Header__theme-switch">Dark Mode</div>
 			</div>
 		</header>
