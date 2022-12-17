@@ -17,7 +17,7 @@
 	text-align: left;
 	font-family: var(--ff-nunito-sans);
 	font-weight: 600;
-	font-size: 14px;
+	font-size: var(--fs-home-page);
 }
 
 .Dropdown__menu {
@@ -38,7 +38,7 @@
 
 .Dropdown__item {
 	color: var(--input);
-	font-size: 14px;
+	font-size: var(--fs-home-page);
 	cursor: pointer;
 }
 

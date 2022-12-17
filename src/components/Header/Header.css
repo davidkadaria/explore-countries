@@ -23,7 +23,7 @@
 
 .Header__heading {
 	font-weight: 800;
-	font-size: 14px;
+	font-size: var(--fs-home-page);
 	user-select: none;
 }
 
@@ -38,6 +38,6 @@
 	}
 
 	.Header__theme-switch {
-		font-size: 14px;
+		font-size: var(--fs-home-page);
 	}
 }
