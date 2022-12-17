@@ -1,6 +1,6 @@
 .Detail {
 	display: grid;
-	padding-top: 40px;
+	padding-block: 40px;
 }
 
 .Detail__flag {
@@ -8,7 +8,9 @@
 }
 
 .Detail__name {
-	padding-top: 40px;
+	padding-block: 40px 20px;
+	/* padding-top: 40px;
+	padding-bottom: 20px; */
 	color: var(--text-color);
 	font-family: var(--ff-nunito-sans);
 	font-weight: 800;
