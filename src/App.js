@@ -19,6 +19,7 @@ const fields = [
 	'languages',
 	'borders',
 	'fifa',
+	'cca3',
 ];
 
 function App() {
@@ -41,6 +42,12 @@ function App() {
 		});
 	};
 
+	const getBorderCountriesByCountryCodes = (countryCodes) => {
+		return countries.filter((country) => {
+			return countryCodes.includes(country.fifa) || countryCodes.includes(country.cca3);
+		});
+	};
+
 	return (
 		<Fragment>
 			<Header />
@@ -50,7 +57,12 @@ function App() {
 						<Route path="/" element={<Home countries={countries} />} />
 						<Route
 							path="/:region/:name"
-							element={<Detail getCountryByRegionAndName={getCountryByRegionAndName} />}
+							element={
+								<Detail
+									getCountryByRegionAndName={getCountryByRegionAndName}
+									getBorderCountriesByCountryCodes={getBorderCountriesByCountryCodes}
+								/>
+							}
 						/>
 					</Routes>
 				) : (
