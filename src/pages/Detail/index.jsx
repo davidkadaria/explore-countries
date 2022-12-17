@@ -1,17 +1,20 @@
 import { Fragment } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Navigate } from 'react-router-dom';
 import { Button, CountryInfo } from '../../components';
 import { ArrowLeftIcon } from '../../icons';
 import './Detail.css';
 
 function Detail({ getCountryByRegionAndName, getBorderCountriesByCountryCodes }) {
-	const navigate = useNavigate();
 	const { region, name } = useParams();
-
+	const navigate = useNavigate();
 	const countryData = getCountryByRegionAndName(region, name);
+
+	if (!countryData) {
+		return <Navigate to="/" />;
+	}
+
 	const borderCountries = getBorderCountriesByCountryCodes(countryData.borders);
-	// console.log(countryData);
-	// console.log(borderCountries);
+
 	return (
 		<Fragment>
 			<Button

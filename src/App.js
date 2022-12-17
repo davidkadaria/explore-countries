@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect, Fragment } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { Header, MainWrapper, Loading } from './components';
 
@@ -64,6 +64,7 @@ function App() {
 								/>
 							}
 						/>
+						<Route path="*" element={<Navigate to={'/'} />} />
 					</Routes>
 				) : (
 					<Loading />
