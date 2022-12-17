@@ -32,3 +32,21 @@
 	color: var(--input);
 	font-weight: 300;
 }
+
+@media (min-width: 768px) {
+	.Search {
+		width: 70%;
+	}
+}
+
+@media (min-width: 992px) {
+	.Search {
+		width: 80%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.Search {
+		width: 40%;
+	}
+}
