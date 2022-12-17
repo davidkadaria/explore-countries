@@ -6,3 +6,4 @@ export * from './FilterWrapper';
 export * from './Search';
 export * from './Dropdown';
 export * from './Button';
+export * from './CountryInfo';
