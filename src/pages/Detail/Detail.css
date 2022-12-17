@@ -16,3 +16,9 @@
 	font-weight: 800;
 	font-size: 32px;
 }
+
+.Detail__info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

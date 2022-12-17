@@ -22,16 +22,30 @@ function Detail({ getCountryByRegionAndName }) {
 				<h1 className="Detail__name">{countryData.name.common}</h1>
 				<div className="Detail__info">
 					<div className="Detail__info-basic">
-						<CountryInfo prefix="Native name" value={'test'} />
-						<CountryInfo prefix="Population" value={'test'} />
-						<CountryInfo prefix="Region" value={'test'} />
-						<CountryInfo prefix="Sub region" value={'test'} />
-						<CountryInfo prefix="Capital" value={'test'} />
+						<CountryInfo
+							prefix="Native name"
+							value={Object.values(countryData.name.nativeName)
+								.map((obj) => obj.common)
+								.join(', ')}
+						/>
+						<CountryInfo
+							prefix="Population"
+							value={countryData.population.toLocaleString('en-US')}
+						/>
+						<CountryInfo prefix="Region" value={countryData.region} />
+						<CountryInfo prefix="Sub region" value={countryData.subregion} />
+						<CountryInfo prefix="Capital" value={countryData.capital?.join(', ')} />
 					</div>
 					<div className="Detail__info-additional">
-						<CountryInfo prefix="Top level domain" value={'test'} />
-						<CountryInfo prefix="Currencies" value={'test'} />
-						<CountryInfo prefix="Languages" value={'test'} />
+						<CountryInfo prefix="Top level domain" value={countryData.tld?.join(', ')} />
+						<CountryInfo
+							prefix="Currencies"
+							value={Object.keys(countryData.currencies)?.join(', ')}
+						/>
+						<CountryInfo
+							prefix="Languages"
+							value={Object.values(countryData.languages)?.join(', ')}
+						/>
 					</div>
 				</div>
 			</div>
