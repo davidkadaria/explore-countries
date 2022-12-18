@@ -2,23 +2,27 @@
 
 View **live version** of the website from **[>>> HERE <<<](https://explore-countries.vercel.app/)**
 
+## Technical Details
+
+The website is built using **React.js**. The structure of the project is important because I tried to make it as **intuitive** and **understandable** as possible. As for additional packages, I used only essential packages (**react-router-dom**, **react-helmet**, etc.). Also **axios** - for interacting with the **API**. The website supports two themes: **light** and **dark**. Users can **switch theme** with one click as desired. The structure of the **markup** is also very noteworthy. Class names are chosen according to **BEM + OOCSS** conventions, which makes the code much easier to read and understand. As for styles, the project uses **normal CSS**.
+
 ## Screenshots
 
-### Home (dark):
+### Home (Dark):
 
-![Homepage (Dark)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Dark).png)
+![Homepage (Dark)](<https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Dark).png>)
 
-### Home (light):
+### Home (Light):
 
-![Homepage (Light)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Light).png)
+![Homepage (Light)](<https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Light).png>)
 
-### Details (dark):
+### Details (Dark):
 
-![Detailpage (Dark)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Detailpage%20(Dark).png)
+![Detailpage (Dark)](<https://github.com/Q4D4/explore-countries/blob/main/screenshots/Detailpage%20(Dark).png>)
 
-### Details (light):
+### Details (Light):
 
-![Detailpage (Light)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Detailpage%20(Light).png)
+![Detailpage (Light)](<https://github.com/Q4D4/explore-countries/blob/main/screenshots/Detailpage%20(Light).png>)
 
 ## Available Scripts
 
