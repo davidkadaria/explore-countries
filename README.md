@@ -4,6 +4,9 @@ View **live version** of the website from **[>>> HERE <<<](https://explore-count
 
 ## Screenshots
 
+![Homepage (Dark)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Dark).png)
+![Homepage (Light)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Light).png)
+
 ## Available Scripts
 
 In the project directory, you can run:
