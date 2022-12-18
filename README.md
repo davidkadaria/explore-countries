@@ -1,6 +1,6 @@
 # Explore the Countries
 
-View **live version** of the website from **[>>> HERE <<<](https://explore-countries.vercel.app/)**.
+View **live version** of the website from **[>>> HERE <<<](https://explore-countries.vercel.app/)**
 
 ## Screenshots
 
