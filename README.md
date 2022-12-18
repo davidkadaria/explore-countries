@@ -4,8 +4,14 @@ View **live version** of the website from **[>>> HERE <<<](https://explore-count
 
 ## Screenshots
 
+Home (dark):
 ![Homepage (Dark)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Dark).png)
+Home (light):
 ![Homepage (Light)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Homepage%20(Light).png)
+Details (dark):
+![Detailpage (Dark)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Detailpage%20(Dark).png)
+Details (light):
+![Detailpage (Light)](https://github.com/Q4D4/explore-countries/blob/main/screenshots/Detailpage%20(Light).png)
 
 ## Available Scripts
 
