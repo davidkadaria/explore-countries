@@ -10,12 +10,16 @@
 	width: 12px;
 }
 
-.ArrowLeftIcon {
+.ArrowLeftIcon,
+.MoonIcon,
+.SunIcon {
 	height: 14px;
 }
 
 .SearchIcon path,
 .ChevronDownIcon path,
-.ArrowLeftIcon path {
+.ArrowLeftIcon path,
+.MoonIcon path,
+.SunIcon path {
 	fill: var(--text-color);
 }
