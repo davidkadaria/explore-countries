@@ -6,7 +6,7 @@ function CountryCard({ flag, name, population, region, capital }) {
 	return (
 		<Link className="CountryCard" to={`/${region.toLowerCase()}/${name.toLowerCase()}`}>
 			<div className="CountryCard__flag">
-				<img src={flag} alt={`Flag of ${name}`} loading="lazy" />
+				<img src={flag} alt={`Flag of ${name}`} />
 			</div>
 			<div className="CountryCard__info">
 				<h2 className="CountryCard__name">{name}</h2>
