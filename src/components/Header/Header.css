@@ -28,8 +28,22 @@
 }
 
 .Header__theme-switch {
+	display: flex;
+	align-items: center;
+	gap: 5px;
 	font-weight: 600;
 	font-size: 12px;
+	cursor: pointer;
+}
+
+.Header__theme-switch .MoonIcon,
+.Header__theme-switch .SunIcon {
+	height: 14px;
+}
+
+.Header__theme-switch .MoonIcon path,
+.Header__theme-switch .SunIcon path {
+	fill: var(--text-color);
 }
 
 @media (min-width: 768px) {
