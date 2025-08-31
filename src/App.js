@@ -28,7 +28,7 @@ function App() {
 
 	const getBorderCountriesByCountryCodes = (countryCodes) => {
 		return countries.filter((country) => {
-			return countryCodes.includes(country.fifa) || countryCodes.includes(country.cca3);
+			return countryCodes.includes(country.cca3);
 		});
 	};
 
