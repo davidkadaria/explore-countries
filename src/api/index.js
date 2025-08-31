@@ -9,7 +9,6 @@ const FIELDS = [
 	'currencies',
 	'languages',
 	'borders',
-	'fifa',
 	'cca3',
 ];
 
